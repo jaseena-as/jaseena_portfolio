@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {Link} from "react-router-dom"
 
 const Home = () => {
   return (
@@ -57,15 +58,15 @@ const Home = () => {
           transition={{ delay: 1.2 }}
           className="flex justify-center gap-6"
         >
-          <a
-            href="/projects"
+          <Link
+            to="/projects"
             className="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg transition"
           >
             View Projects
-          </a>
+          </Link>
 
           <a
-            href="/Jaseena_A_S.pdf"
+            href="jaseena_portfolio/Jaseena_A_S.pdf"
             download="Jaseena_A_S_Resume.pdf"
             className="border border-indigo-500 px-6 py-3 rounded-lg hover:bg-indigo-600 transition"
           >
