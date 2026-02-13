@@ -6,6 +6,8 @@ import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
 import Skills from "../pages/Skills";
 
+const repoName = "/jaseena_portfolio";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
       { path: "skills", element: <Skills /> },
     ],
   },
-]);
+],{
+    basename: repoName,
+});
 
 export default router;
